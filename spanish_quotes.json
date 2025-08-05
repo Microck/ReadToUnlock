@@ -9,36 +9,764 @@
       "author": "Constitucion Politica de Costa Rica."
     },
     {
-      "text": "El único modo de hacer un gran trabajo es amar lo que haces.",
-      "author": "Steve Jobs"
+      "text": "En general, los hombres juzgan más por los ojos que por la inteligencia, pues todos pueden ver, pero pocos comprenden lo que ven.",
+      "author": "Nicolás Maquiavelo - El Príncipe"
     },
     {
-      "text": "La vida es lo que te pasa mientras estás ocupado haciendo otros planes.",
-      "author": "John Lennon"
+      "text": "Tenía la idea de que al poner nombre a los problemas, éstos se materializan y ya no es posible ignorarlos; en cambio, si se mantienen en el limbo de las palabras no dichas, pueden desaparecer solos, con el transcurso del tiempo.",
+      "author": "Isabel Allende, La Casa de los Espíritus."
     },
     {
-      "text": "El futuro pertenece a aquellos que creen en la belleza de sus sueños.",
-      "author": "Eleanor Roosevelt"
+      "text": "La soledad es un peligro para una mente en funcionamiento. Necesitamos rodearnos de personas que piensan y hablan. Cuando pasamos demasiado tiempo solos, poblamos el vacío con fantasmas. Lo dijo Maupassant, en \"Le Horla\"",
+      "author": "Lauren Groff, Florida"
     },
     {
-      "text": "Es durante nuestros momentos más oscuros cuando debemos enfocarnos para ver la luz.",
-      "author": "Aristóteles"
+      "text": "El bostezo imperceptible de las moscas y el estirón de las alas de la flota de zopilotes, no significaron novedad alguna para los buzos de la madrugada. Entre la llovizna persistente y los vapores de aquel mar sin devenir, los últimos camiones, ahora vacíos, se alejaban para comenzar otro día de recolección. Los buzos habían extraído varios cargamentos importantes de las profundidades de su mar muerto y antes de los que el turno del día llegaran a sumar sus brazadas, se apresuraban a seleccionar sus presas para la venta en las recicladoras de latas, botellas y papel, o en las fundidoras de metales más pesados.",
+      "author": "Fernando Contreras Castro, Única Mirando al Mar"
     },
     {
-      "text": "El único viaje imposible es aquel que nunca comienzas.",
-      "author": "Tony Robbins"
+      "text": "El amor descubre matices invisibles para los ojos indiferentes y saca de ellos consecuencias infinitas.",
+      "author": "Stendhal (Marie-Henri Beyle), La cartuja de Parma"
     },
     {
-      "text": "En medio de la dificultad yace la oportunidad.",
+      "text": "El ímpetu, producto de la masa por la velocidad de un cuerpo se conserva entre portales. Para los nuevos, si entras rápido sales rápido.",
+      "author": "Portal 1"
+    },
+    {
+      "text": "Probablemente de todos nuestros sentimientos, el único que no es verdaderamente nuestro es la esperanza. La esperanza le pertenece a la vida, es la vida misma defendiéndose.",
+      "author": "Julio Cortázar, Rayuela"
+    },
+    {
+      "text": "En primer lugar, quiero dejar una cosa bien clara: éste no es el típico diario. Sencillamente, he decidido empezar a escribir mis memorias. Ya sé lo que pone en la tapa. Mira que cuando mamá lo fue a comprar le pedí de manera específica que no tuviera el rotulito de \"diario\"",
+      "author": "Diario de Greg 1"
+    },
+    {
+      "text": "La naturaleza es la más amorosa de las madres cuando el dolor se ha adueñado de nuestra alma; y si la felicidad nos acaricia, ella nos sonríe.",
+      "author": "Jorge Isaacs, María"
+    },
+    {
+      "text": "Es un hombre, pero podría ser otra cosa: una catástrofe, un rugido, el viento. Sentado en una butaca baja cubierta por una manta de lana, viste camisa de jean, un suéter beige que tiene varios agujeros, un pantalón de corderoy. A sus espaldas, una puerta vidriada separa la sala de un balcón en el que se ven dos sillas y, más allá, un terreno cubierto por arbustos. Después, el Océano Pacífico, las olas que muerden rocas como corazones negros.",
+      "author": "Leila Guerriero, Buscando a Nicanor"
+    },
+    {
+      "text": "La mecanografía es el proceso de introducir caracteres alfanuméricos en un dispositivo por medio de un teclado como los que poseen las máquinas de escribir, los ordenadores o las calculadoras.",
+      "author": "Wikipedia, Mecanografía"
+    },
+    {
+      "text": "Quedan 45 minutos apenas, si es que ya ha empezado el segundo tiempo. 45 minutos. Pero ¿cómo es posible que tarden tanto en pasar 45 minutos? ¿Cómo puede ser que se transformen en una eternidad inacabable? La cosa es no mirar el reloj. No mirarlo nunca. Entonces, de pronto, cuando uno en un reflejo natural y entendible de animal urbano mira el cuadrante, ya han pasado 40 minutos o 43, no queda nada.",
+      "author": "Roberto Fontanarrosa, La Observación de los Pájaros"
+    },
+    {
+      "text": "La verdad es que, aquí como en todo, Gorgias se debate entre la exposición de una doctrina propia y la crítica, por exageración y reducción al absurdo, de doctrinas ajenas. Es este último interés el que ocupa el primer lugar, el que domina, por así decirlo, el primer nivel de la exposición.",
+      "author": "Nuevos estudios de lingüística general y de teoría literaria"
+    },
+    {
+      "text": "Una ciudad es una abstracción que nos concedemos para darle un nombre propio a una serie de lugares fragmentarios, inconexos, opacos, y la mayor parte del tiempo imaginarios y desiertos de nosotros.",
+      "author": "Juan José Saer, La mayor"
+    },
+    {
+      "text": "Comí los alimentos del mundo. Mi mano tocó piedras de ciudades famosas y mi cuerpo, reducido ahora, pero sano y salvaje, atravesó calles más numerosas que las arrugas de un río. ¿Qué hombres no conocí? ¿Qué libros no he leído? ¿Qué ha de haber en el almacén de lo visible y de lo invisible que se me pueda vender como novedad?",
+      "author": "Juan José Saer, El poeta septuagenario"
+    },
+    {
+      "text": "Somos como la vieja torre cuando saltan de sus ventanas golondrinas; somos como la vieja torre cuando cantan en sus campanas voces finas. Somos como la cama de un enfermo cuando alzándose en ella se ve el prado; somos como la cama de un enfermo que está viendo una estrella de acostado. Pero nuestro corazón con ilusiones como la torre es, que tiene sones, que tiene golondrinas, pero es vieja. Pero nuestro corazón siempre en desvelo, es cual lecho que puede ver el cielo, pero que lleva a uno que se queja.",
+      "author": "Enrique Banchs, Imagen"
+    },
+    {
+      "text": "La señora Lefevre era una dama de pueblo. Era una viuda de esas medio campesinas, de cintas y sombreros aparatosos, que hablan con dureza y adoptan en público aires grandiosos; de esas que ocultan, bajo aspectos cómicos y expresivos, un alma de pretenciosa estúpida y esconden, bajo guantes de seda, sus inmensas manos rojas.",
+      "author": "Guy de Maupassant, Pierrot"
+    },
+    {
+      "text": "Mal científico sería yo si afirmara que cada detalle que aquí presento quedará fijo para siempre, sin cambio alguno. Insisto solamente en que el esfuerzo por entender el lenguaje y su papel social vale la pena realizarlo, así como en que el enfoque objetivo y amplio lleva a una comprensión relativamente segura, si bien a la luz descubre siempre nuevos problemas que merecen especial atención.",
+      "author": "Morris Swadesh, El lenguaje y la vida humana"
+    },
+    {
+      "text": "Con el paso del tiempo la idea original de Borel se fue refinando y desde los años 70 fue dada la vuelta para afirmar, en el coloquialmente conocido como \"Teorema de los infinitos monos\" o \"Teorema del mono infinito\", que si un número infinito de monos inmortales aporrean máquinas de escribir (o teclados de ordenador, no nos vamos a poner exigentes) durante toda la eternidad, alguno acabará escribiendo El Quijote.",
+      "author": "Manuel García, Conrado Miguel - Momentos estelares de la probabilidad y estadística"
+    },
+    {
+      "text": "Dentro de veinte años estarás más decepcionado por las cosas que no hiciste, que por las que hiciste. Así que suelta las amarras. Navega lejos del puerto seguro. Atrapa los vientos alisios en tus velas. Explora. Sueña. Descubre.",
+      "author": "Mark Twain"
+    },
+    {
+      "text": "He fallado más de 9000 tiros en mi carrera. He perdido casi 300 partidos. En 26 ocasiones, pude hacer la canasta que ganara el partido y fallé. He fracasado una y otra vez en mi vida. Y por esa razón he triunfado.",
+      "author": "Michael Jordan"
+    },
+    {
+      "text": "La falta de miedo es como un músculo. Sé por propia experiencia que cuanto más lo ejercitas más natural se convierte el no dejar que los miedos guíen tu vida.",
+      "author": "Arianna Huffington"
+    },
+    {
+      "text": "Para evitar la crítica no hagas nada, no digas nada, no seas nada.",
+      "author": "Elbert Hubbard"
+    },
+    {
+      "text": "La mente es todo. Te conviertes en lo que piensas.",
+      "author": "Buda (Buddha)"
+    },
+    {
+      "text": "La vida es una oportunidad, benefíciate de ella. La vida es belleza, admírala. La vida es un sueño, alcánzalo. La vida es un desafío, cumple. La vida es un deber, complétala. La vida es un juego, juégala. La vida es una promesa, cúmplela. La vida es pena, supérala. La vida es una canción, cántala. La vida es lucha, acéptala. La vida es una tragedia, enfréntala. La vida es una aventura, atrévete. La vida es suerte, hazlo. La vida es demasiado preciosa, no la destruyas. La vida es vida, lucha por ella.",
+      "author": "Madre Teresa"
+    },
+    {
+      "text": "He sido impresionado con la urgencia de hacer. Saber no es suficiente, debemos aplicar. Estar dispuesto no es suficiente, debemos hacer.",
+      "author": "Brady Shirel"
+    },
+    {
+      "text": "-No se puede decir señores apus -lo amonestó Dionisio-. Porque apu quiere decir señor en quechua. Y toda repetición es una ofensa, señor cabo, como dice el vals.\n-Tampoco se debe de decir señor cabo -replicó Lituma-. Cabo o señor, pero las dos cosas juntas es tomadura de pelo. Aunque, usted siempre está tomándole el pelo a la gente.",
+      "author": "Mario Vargas Llosa, Lituma en los Andes"
+    },
+    {
+      "text": "Había empezado a leer la novela unos días antes. La abandonó por negocios urgentes, volvió a abrirla cuando regresaba en tren a la finca; se dejaba interesar lentamente por la trama, por el dibujo de los personajes. Esa tarde, después de escribir una carta a su apoderado y discutir con el mayordomo una cuestión de aparcerías, volvió al libro en la tranquilidad del estudio que miraba hacia el parque de los robles.",
+      "author": "Continuidad de los Parques, Julio Cortázar, 1964"
+    },
+    {
+      "text": "Sin embargo, frente a la opresión, el saqueo y el abandono, nuestra respuesta es la vida. Ni los diluvios ni las pestes, ni las hambrunas ni los cataclismos, ni siquiera las guerras eternas a través de los siglos y los siglos han conseguido reducir la ventaja tenaz de la vida sobre la muerte.",
+      "author": "Gabriel García Marquéz, La soledad de América Latina"
+    },
+    {
+      "text": "Vine a Comala porque me dijeron que acá vivía mi padre, un tal Pedro Páramo.",
+      "author": "Juan Rulfo, Pedro Páramo"
+    },
+    {
+      "text": "La simplicidad es la máxima sofisticación.",
+      "author": "Leonardo Da Vinci"
+    },
+    {
+      "text": "Sentí cuando cayó en mis manos el hilito de sangre con que estaba amarrada a mi corazón.",
+      "author": "Juan Rulfo, Pedro Páramo"
+    },
+    {
+      "text": "No es lo que no sabes lo que te mete en problemas, es lo que sabes con certeza que simplemente no es así.",
+      "author": "Mark Twain"
+    },
+    {
+      "text": "Aquel que no entiende tus silencios, lo más seguro es que tampoco entienda tus palabras.",
+      "author": "Elbert Hubbard"
+    },
+    {
+      "text": "Pedimos y pedimos, se nos da y se nos vuelve a dar; pero quien mucho pide, un día no recibirá.",
+      "author": "Zuhayr Ibn Abi Sulma, Mu'allaqa"
+    },
+    {
+      "text": "El intenso perfume de las rosas embalsamaba el estudio y, cuando la ligera brisa agitaba los árboles del jardín, entraba, por la puerta abierta, un intenso olor a lilas o el aroma más delicado de las flores rosadas de los espinos.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "text": "Elijo a mis amigos por su apostura, a mis conocidos por su buena reputación y a mis enemigos por su inteligencia. No es posible excederse en el cuidado al elegir a los enemigos. No tengo ni uno solo que sea estúpido. Todos son personas de cierta talla intelectual y, en consecuencia, me aprecian.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "text": "Si algún día te digo que te creo no me creas que te creo porque ya no creo ni en mi reflejo.",
+      "author": "Canserbero"
+    },
+    {
+      "text": "No me mires que nos miran. Nos miran que nos miramos, miremos que no nos miren y cuando no miren nos miraremos. Porque si nos miran que nos miramos miran que nos amamos.",
+      "author": "Trabalenguas"
+    },
+    {
+      "text": "Estoy en esos tiempos en que gota a gota la mente se agota, pasan los días y apenas lo notas, la rutina es implacable, el mal humor te arropa y luces como un don nadie con cualquier ropa.",
+      "author": "Canserbero"
+    },
+    {
+      "text": "Nudo en el cuello veo tus redes sociales, cada foto supera la anterior en lo feliz que sales, por ello no me sale, o sea, no me nace escribirte, siquiera pensar en molestar lo que construiste. Después de que te fuiste sabiamente, obviamente eso lo vi después de herirte torpemente, al fin y al cabo ser feliz es lo que debo exigirte y si ya eres feliz sin mí, no puedo contradecirte.",
+      "author": "Canserbero"
+    },
+    {
+      "text": "Quiero la tierra donde vivo, pero también la tierra que no he conocido. Quiero a las personas que quiero, pero espero conocer muchas más a lo largo del camino. Aquí o allá, norte o sur, o en el sur del norte, hay gente que no tiene quién le quiera, pero nunca desespera para que tú seas la primera que la quiera.",
+      "author": "La gran orquesta republicana"
+    },
+    {
+      "text": "Escribir un diario es una experiencia muy extraña para alguien como yo. No sólo porque yo nunca he escrito nada antes, también porque me parece que más adelante ni yo ni nadie estará interesado en las reflexiones de una niña de trece años de edad.",
+      "author": "Ana Frank"
+    },
+    {
+      "text": "Es cierto que no te quiero tanto como cuando éramos novios, pero es que a mí nunca me han gustado las mujeres casadas.",
+      "author": "proverbio americano"
+    },
+    {
+      "text": "Cuando el viento de la madrugada irrumpe sobre La Perla, empujando la neblina hacia el mar y disolviéndola, y el recinto del Colegio Militar Leoncio Prado se aclara como una habitación colmada de humo cuyas ventanas acaban de abrirse, un soldado anónimo aparece bostezando en el umbral del galpón y avanza restregándose los ojos hacia las cuadras de los cadetes. La corneta que lleva en su mano se balancea con el movimiento de su cuerpo y, en la difusa claridad, brilla.",
+      "author": "Mario Vargas Llosa, La Ciudad y los Perros"
+    },
+    {
+      "text": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.",
+      "author": "Don Quijote de la Mancha"
+    },
+    {
+      "text": "Dar el ejemplo no es la principal manera de influir sobre los demás; es la única manera.",
       "author": "Albert Einstein"
     },
     {
-      "text": "El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el coraje para continuar.",
-      "author": "Winston Churchill"
+      "text": "Un hermano puede no ser un amigo, pero un amigo será siempre un hermano.",
+      "author": "Benjamin Franklin"
     },
     {
-      "text": "Cree que puedes y ya estás a medio camino.",
-      "author": "Theodore Roosevelt"
+      "text": "Estar en paz consigo mismo es el medio más seguro de comenzar a estarlo con los demás.",
+      "author": "Fray Luis de Leon"
+    },
+    {
+      "text": "Señor, las tristezas no se hicieron para las bestias, sino para los hombres; pero si los hombres las sienten demasiado, se vuelven bestias.",
+      "author": "Don Quijote de la Mancha, de Miguel de Cervantes"
+    },
+    {
+      "text": "No importa las condiciones en las que uno nace, sino lo que llega a ser cuando crece.",
+      "author": "Harry Potter y el cáliz de fuego, de J.K. Rowling"
+    },
+    {
+      "text": "Me pregunto si las estrellas se iluminan con el fin de que, algún día, cada uno pueda encontrar la suya.",
+      "author": "El Principito"
+    },
+    {
+      "text": "Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo. Macondo era entonces una aldea de veinte casas de barro y cañabrava construidas a la orilla de un río de aguas diáfanas que se precipitaban por un lecho de piedras pulidas, blancas y enormes como huevos prehistóricos. El mundo era tan reciente, que muchas cosas carecían de nombre, y para mencionarlas había que señalarlas con el dedo.",
+      "author": "Cien años de soledad - Gabriel García Márquez"
+    },
+    {
+      "text": "El artista debe de ser mezcla de niño, hombre y mujer.",
+      "author": "Ernesto Sábato"
+    },
+    {
+      "text": "Lo vulgar es el ronquido, lo inverosímil, el sueño. La humanidad ronca, pero el artista está en la obligación de hacerla soñar o no es artista.",
+      "author": "Enrique Jardiel Poncela"
+    },
+    {
+      "text": "El requisito definitivo para la grandeza de un artista es su propia muerte.",
+      "author": "Thiessen"
+    },
+    {
+      "text": "Todo artista es tan múltiple que el crítico no puede dejar de encontrar en él lo que busca resueltamente y a priori.",
+      "author": "André Maurois"
+    },
+    {
+      "text": "Hay millones de artistas que crean; sólo unos cuantos miles son aceptados o, siquiera, discutidos por el espectador; y de ellos, muchos menos todavía llegan a ser consagrados por la posteridad.",
+      "author": "Marcel Duchamp"
+    },
+    {
+      "text": "Un intelectual es el que dice una cosa simple de un modo complicado. Un artista es el que dice una cosa complicada de un modo simple.",
+      "author": "Charles Bukowski"
+    },
+    {
+      "text": "El trabajo del artista no es sucumbir a la desesperación, sino encontrar un antídoto para el vacío de la existencia.",
+      "author": "Woody Allen"
+    },
+    {
+      "text": "El sabio generaliza; el artista individualiza.",
+      "author": "Jules Renard"
+    },
+    {
+      "text": "La matemática es la ciencia del orden y la medida, de bellas cadenas de razonamientos, todos sencillos y fáciles.",
+      "author": "René Descartes"
+    },
+    {
+      "text": "Las matemáticas son el alfabeto con el cual Dios ha escrito el Universo.",
+      "author": "Galileo Galilei"
+    },
+    {
+      "text": "Las proposiciones matemáticas, en cuanto tienen que ver con la realidad, no son ciertas; y en cuanto que son ciertas, no tienen nada que ver con la realidad.",
+      "author": "Albert Einstein"
+    },
+    {
+      "text": "Es completamente lícito para una católica evitar el embarazo recurriendo a las matemáticas, aunque todavía está prohibido recurrir a la física o a la química.",
+      "author": "Henry-Louis Mencken"
+    },
+    {
+      "text": "Las matemáticas pueden ser definidas como aquel tema del cual no sabemos nunca lo que decimos ni si lo que decimos es verdadero.",
+      "author": "Bertrand Russell"
+    },
+    {
+      "text": "Las matemáticas poseen no sólo la verdad, sino cierta belleza suprema. Una belleza fría y austera, como la de una escultura.",
+      "author": "Bertrand Russell"
+    },
+    {
+      "text": "Las matemáticas son una gimnasia del espíritu y una preparación para la filosofía.",
+      "author": "Isócrates"
+    },
+    {
+      "text": "Un filósofo es un tipo que sube a una cumbre en busca del sol; encuentra niebla, desciende y explica el magnífico espectáculo que ha visto.",
+      "author": "William Somerset Maugham"
+    },
+    {
+      "text": "Todos los hombres son aptos para perpetuar la especie; la naturaleza forma y escoge aquellos que son dignos de perpetuar la idea.",
+      "author": "José María Vargas Vila"
+    },
+    {
+      "text": "La idea que no trata de convertirse en palabra es una mala idea, y la palabra que no trata de convertirse en acción es una mala palabra.",
+      "author": "Gilbert Keith Chesterton"
+    },
+    {
+      "text": "El trabajo del pensamiento se parece a la perforación de un pozo: el agua es turbia al principio, más luego se clarifica.",
+      "author": "Proverbio chino"
+    },
+    {
+      "text": "Ciertos pensamientos son plegarias. Hay momentos en que, sea cual fuere la actividad del cuerpo, el alma está de rodillas.",
+      "author": "Victor Hugo"
+    },
+    {
+      "text": "El hombre que escucha la razón está perdido. La razón esclaviza a todos los que no son bastante fuertes para dominarla.",
+      "author": "George Bernard Shaw"
+    },
+    {
+      "text": "¿Dónde puedo encontrar un hombre gobernado por la razón y no por los hábitos y los deseos?",
+      "author": "Khalil Gibran"
+    },
+    {
+      "text": "La razón obra con lentitud, y con tantas miras, sobre tantos principios, que a cada momento se adormece o extravía. La pasión obra en un instante.",
+      "author": "Blaise Pascal"
+    },
+    {
+      "text": "Un entendimiento todo lógica es como un cuchillo de hoja sola, que hiera la mano de su dueño.",
+      "author": "Rabindranath Tagore"
+    },
+    {
+      "text": "El amor ahuyenta el miedo y, recíprocamente el miedo ahuyenta al amor. Y no sólo al amor el miedo expulsa; también a la inteligencia, la bondad, todo pensamiento de belleza y verdad, y sólo queda la desesperación muda; y al final, el miedo llega a expulsar del hombre la humanidad misma.",
+      "author": "Aldous Huxley"
+    },
+    {
+      "text": "No hace falta conocer el peligro para tener miedo; de hecho, los peligros desconocidos son los que inspiran más temor.",
+      "author": "Alejandro Dumas"
+    },
+    {
+      "text": "Nada en la vida debe ser temido, solamente comprendido. Ahora es el momento de comprender más, para temer menos.",
+      "author": "Marie Curie"
+    },
+    {
+      "text": "De aquel que opina que el dinero puede hacerlo todo, cabe sospechar con fundamento que será capaz de hacer cualquier cosa por dinero.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "text": "No estimes el dinero en más ni en menos de lo que vale, porque es un buen siervo y un mal amo.",
+      "author": "Alejandro Dumas"
+    },
+    {
+      "text": "El dinero no da la felicidad, pero procura una sensación tan parecida, que necesita un especialista muy avanzado para verificar la diferencia.",
+      "author": "Woody Allen"
+    },
+    {
+      "text": "Es bonito tener dinero y cosas que puede comprar el dinero, pero también es bonito tener las cosas que el dinero no puede comprar.",
+      "author": "George Horace Lorimer"
+    },
+    {
+      "text": "El que no considera lo que tiene como la riqueza más grande, es desdichado, aunque sea dueño del mundo.",
+      "author": "Epicuro de Samos"
+    },
+    {
+      "text": "Estoy absolutamente convencido que ninguna riqueza del mundo puede ayudar a que progrese la humanidad. El mundo necesita paz permanente y buena voluntad perdurable.",
+      "author": "Albert Einstein"
+    },
+    {
+      "text": "Cuatro características corresponden al juez: Escuchar cortésmente, responder sabiamente, ponderar prudentemente y decidir imparcialmente.",
+      "author": "Sócrates"
+    },
+    {
+      "text": "Se piensa que lo justo es lo igual, y así es; pero no para todos, sino para los iguales. Se piensa por el contrario que lo justo es lo desigual, y así es, pero no para todos, sino para los desiguales.",
+      "author": "Aristóteles"
+    },
+    {
+      "text": "El abogado es un hábil caballero que se ocupa de cuidar nuestros bienes de nuestros enemigos para poder quedárselos él.",
+      "author": "Lord Brougham"
+    },
+    {
+      "text": "Dadme dos líneas escritas a puño y letra por el hombre más honrado, y encontraré en ellas motivo para hacerlo encarcelar.",
+      "author": "Cardenal Richelieu"
+    },
+    {
+      "text": "Las leyes son como las telas de araña, a través de las cuales pasan libremente las moscas grandes y quedan enredadas las pequeñas.",
+      "author": "Honoré de Balzac"
+    },
+    {
+      "text": "El legislador no debe proponerse la felicidad de cierto orden de ciudadanos con exclusión de los demás, sino la felicidad de todos.",
+      "author": "Platón"
+    },
+    {
+      "text": "Las cadenas de la esclavitud solamente atan las manos: es la mente lo que hace al hombre libre o esclavo.",
+      "author": "Franz Grillparzer"
+    },
+    {
+      "text": "No pido riquezas, ni esperanzas, ni amor, ni un amigo que me comprenda; todo lo que pido es el cielo sobre mí y un camino a mis pies.",
+      "author": "Robert Louis Stevenson"
+    },
+    {
+      "text": "Mira ese punto. Eso es aquí. Eso es nuestro hogar. Eso somos nosotros.",
+      "author": "Carl Sagan"
+    },
+    {
+      "text": "Mira ese punto. Eso es aquí. Eso es nuestro hogar. Eso somos nosotros. En él, todos los que amas, todos los que conoces, todos de los que alguna vez escuchaste, cada ser humano que ha existido, vivió su vida. La suma de todas nuestras alegrías y sufrimientos, miles de religiones seguras de sí mismas, ideologías y doctrinas económicas, cada cazador y recolector, cada héroe y cobarde, cada creador y destructor de civilizaciones, cada rey y campesino, cada joven pareja enamorada, cada madre y padre, niño esperanzado, inventor y explorador, cada maestro de la moral, cada político corrupto, cada “superestrella”, cada “líder supremo”, cada santo y pecador en la historia de nuestra especie, vivió ahí - en una mota de polvo suspendida en un rayo de sol.",
+      "author": "Carl Sagan"
+    },
+    {
+      "text": "Abran la puerta del silo, ¡vienen a por nosotros, es la única salida!",
+      "author": "Half-Life"
+    },
+    {
+      "text": "Hay un axioma de derecho de gran profundidad: A menos que el pensamiento del malo nazca en una organización degenerada, la naturaleza humana repele el crimen, sin embargo, la civilización nos ha dado necesidades, vicios, apetitos que a veces ahogan nuestros buenos instintos y nos conducen al mal.",
+      "author": "Alexandre Dumas"
+    },
+    {
+      "text": "Aprender no es saber, hay eruditos y hay sabios, la memoria hace los primeros, la filosofía los segundos, la filosofía no se enseña, la filosofía es la reunión de las ciencias adquiridas al genio que las aplica.",
+      "author": "Alexandre Dumas"
+    },
+    {
+      "text": "Riqueza, fama, poder... El hombre que lo consiguió todo en este mundo, el Rey de los Piratas, Gold Roger. Las últimas palabras que dijo justo antes de morir, enviaron a mucha gente a los mares.",
+      "author": "Narrador - One piece"
+    },
+    {
+      "text": "Las lágrimas falsas son capaces de herir a los demás, las sonrisas falsas pueden lastimarnos a nosotros mismos.",
+      "author": "C.C. - Code Geass"
+    },
+    {
+      "text": "Las lágrimas falsas traen dolor a los que te rodean. Una sonrisa falsa trae dolor a uno mismo.",
+      "author": "C.C. - Code Geass"
+    },
+    {
+      "text": "Tal vez nada en este mundo ocurre por accidente. Mientras todo pasa por una razón, nuestro destino toma forma lentamente.",
+      "author": "Silvers Rayleigh - One piece"
+    },
+    {
+      "text": "Si se preocuparan por algo tan trivial como perder el respeto, entonces es mejor no tenerlo en primer lugar.",
+      "author": "Fujitora - One piece"
+    },
+    {
+      "text": "Yo soy el que sostiene el arma. Yo apunto. Yo pongo el cargador, y deslizo la cámara. Yo soy el que quita el seguro. Pero... tú eres la que en realidad los mata. Así que, ¿Qué harás? Dame mi orden, Sir Hellsing.",
+      "author": "Alucard - Hellsing Ultimate"
+    },
+    {
+      "text": "¿Cómo puedo pagarte por lo que has hecho? Nunca había visto un cielo tan azul en primavera. Si tan solo pudiera regalarte este maravilloso cielo. No, sé que hay algo que te gustaría más... Un pastel con mucha crema batida.",
+      "author": "Miyamura Izumi - Horimiya"
+    },
+    {
+      "text": "Mi nombre es Yoshikage Kira. Tengo 33 años de edad. Mi casa está en la sección noreste de Morioh, donde están todas las villas, y no estoy casado. Trabajo como empleado para los grandes almacenes Kame Yu y llego a casa todos los días a las 8 p.m. como muy tarde. No fumo, pero bebo de vez en cuando. Me acuesto a las 11 p.m. y me aseguro de dormir ocho horas, pase lo que pase. Después de tomar un vaso de leche tibia y hacer unos veinte minutos de estiramientos antes de acostarme, no suelo tener problemas para dormir hasta la mañana. Al igual que un bebé, me despierto sin fatiga ni estrés por la mañana.",
+      "author": "Yoshikage Kira - Jojo's Bizzare Adventure"
+    },
+    {
+      "text": "Primero una persona, después otra y, al final, casi todos los que se encuentran en la multitud se llevan los tres dedos centrales de la mano izquierda a los labios y después me señalan con ellos. Es un gesto antiguo (y rara vez usado) de nuestro distrito que a veces se ve en los funerales; es un gesto de dar gracias, de admiración, de despedida a un ser querido.",
+      "author": "Katniss Everdeen - Los juegos del hambre"
+    },
+    {
+      "text": "Es casi insoportable, ¿cierto? El dolor de estar totalmente solo. Conozco el sentimiento, he estado allí, en ese lugar solitario y oscuro, pero ahora hay otras personas, otros que significan mucho para mí. Me importan más ellos que yo mismo, y no permitiré que nadie los lastime. Por eso nunca me rendiré, ¡te detendré, así tenga que matarte! Me salvaron de mí mismo, me rescataron de la soledad, fueron los primeros que me aceptaron por quien soy. Son mis amigos.",
+      "author": "Naruto Uzumaki - Naruto Shippuden"
+    },
+    {
+      "text": "La voluntad heredada, la era del destino y los sueños de la gente. Esas son cosas que nunca serán detenidas. Siempre y cuando la gente siga persiguiendo el significado de la libertad, nadie podrá quitárselas nunca... ¡Esas cosas nunca dejarán de existir!",
+      "author": "Gol D Roger - One Piece"
+    },
+    {
+      "text": "No existe la magia, sólo la ilusión. Las cosas sólo cambian cuando nosotros las cambiamos, pero tienes que ser hábil, hacerlo en secreto. Y entonces parece magia.",
+      "author": "Mikkel - Dark"
+    },
+    {
+      "text": "Nuestro pensamiento está moldeado por el dualismo. Entrada, salida. Negro, blanco. Bien, mal. Todo aparece como pares opuestos. Pero eso está mal.",
+      "author": "H.G Tannhaus - Dark"
+    },
+    {
+      "text": "La muerte es incomprensible, pero puedes reconciliarte con ella. Hasta entonces te preguntarás cada día si tomaste las decisiones correctas.",
+      "author": "Jonas - Dark"
+    },
+    {
+      "text": "El hombre es una criatura extraña. Todas sus acciones están motivadas por el deseo, su carácter forjado por el dolor. Por mucho que intente reprimir ese dolor, reprimir el deseo, no puede liberarse de la servidumbre eterna a sus sentimientos. Mientras la tormenta se desata dentro de él, no puede encontrar la paz. No en la vida, no en la muerte. Y así hará lo que debe, día tras día.",
+      "author": "Adam - Dark"
+    },
+    {
+      "text": "Dos cosas son infinitas: la estupidez humana y el Universo; y no estoy seguro de lo segundo.",
+      "author": "Albert Einstein"
+    },
+    {
+      "text": "Han pasado 25 años desde que Gold Roger exploró todo el Grand Line. Su archienemigo, Barbablanca, no se sentó en el trono, solo se puso al frente y tomó las riendas. ¿Qué hay ahora? ¡El número de piratas está aumentando y sólo hay un asiento vacío! Sabes a lo que me refiero, ¿verdad? ¡Pronto empezará! ¡La mayor batalla por la supremacía en la historia de los piratas!",
+      "author": "Donquixote Doflamingo - One Piece"
+    },
+    {
+      "text": "Esta \"Nueva Era\" de la que hablan es basura. ¡¿La época en la que los piratas sueñan ha terminado?! ¡¿Eh?! ¡Los sueños de las personas jamás terminan!",
+      "author": "Marshal D. Teach - One Piece"
+    },
+    {
+      "text": "Ayer tuve un amor que hoy me abandonó porque no me quería. Fue tanta la ilusión por hacerla feliz pero todo fue en vano.",
+      "author": "Manuel Jiménez. Máximo Fonseca - Ayer y Hoy"
+    },
+    {
+      "text": "Ódiame por piedad yo te lo pido, ódiame sin medida ni clemencia. Odio quiero más que indiferencia, porque el rencor hiere menos que el olvido.",
+      "author": "Rafael Otero López - Ódiame"
+    },
+    {
+      "text": "Dicen que con el tiempo los recuerdos se esfuman. Se ahonda en el olvido lo que fue una pasión. Mentira, cuando mueras y bajas a mi tumba verás que aún por ti arde la llama de mi amor.",
+      "author": "Luis Aguirre Pinto - Reminiscencias"
+    },
+    {
+      "text": "Cuando escribí El Alquimista, intentaba entender la razón de la existencia de vivir. En lugar de hacer un tratado filosófico, decidí conversar con el niño que existía en mi alma. Para mi sorpresa, este niño todavía vivía en millones de personas en el mundo entero. Con este libro quiero compartir con mis lectores las preguntas que, justamente por no tener respuestas, hacen de la vida una gran aventura.",
+      "author": "Paulo Coelho - El Alquimista"
+    },
+    {
+      "text": "Es justamente la posibilidad de realizar un sueño lo que hace la vida interesante.",
+      "author": "Paulo Coelho - El Alquimista"
+    },
+    {
+      "text": "Emerge tu recuerdo de la noche en que estoy. El río anuda al mar su lamento obstinado. Abandonado como los muelles en el alba. Es la hora de partir, oh abandonado! Sobre mi corazón llueven frías corolas. Oh sentina de escombros, feroz cueva de náufragos! En ti se acumularon las guerras y los vuelos. De ti alzaron las alas los pájaros del canto. Todo te lo tragaste, como la lejanía. Como el mar, como el tiempo. Todo en ti fue naufragio!",
+      "author": "Pablo Neruda - La canción desesperada"
+    },
+    {
+      "text": "Puedo escribir los versos más tristes esta noche. Escribir, por ejemplo: \"La noche está estrellada, y tiritan, azules, los astros, a lo lejos\". El viento de la noche gira en el cielo y canta. Puedo escribir los versos más tristes esta noche. Yo la quise, y a veces ella me quiso. En las noches como esta la tuve entre mis brazos. La besé tantas veces bajo el cielo infinito. Ella me quiso, a veces yo también la quería. Cómo no haber amado sus grandes ojos fijos. Puedo escribir los versos más tristes esta noche. Pensar que no la tengo. Sentir que la he perdido.",
+      "author": "Pablo Neruda - Poema 20"
+    },
+    {
+      "text": "Oír la noche inmensa, más inmensa sin ella. Y el verso cae al alma como al pasto el rocío. Qué importa que mi amor no pudiera guardarla. La noche está estrellada y ella no está conmigo. Eso es todo. A lo lejos alguien canta. A lo lejos. Mi alma no se contenta con haberla perdido. Como para acercarla mi mirada la busca. Mi corazón la busca, y ella no está conmigo. La misma noche que hace blanquear los mismos árboles. Nosotros, los de entonces, ya no somos los mismos. Ya no la quiero, es cierto, pero cuánto la quise. Mi voz buscaba el viento para tocar su oído. De otro. Será de otro. Como antes de mis besos. Su voz, su cuerpo claro. Sus ojos infinitos. Ya no la quiero, es cierto, pero tal vez la quiero. Es tan corto el amor, y es tan largo el olvido. Porque en noches como ésta, la tuve entre mis brazos, mi alma no se contenta con haberla perdido. Aunque éste sea el último dolor que ella me causa, y éstos sean los últimos versos que yo le escribo.",
+      "author": "Pablo Neruda - Poema 20"
+    },
+    {
+      "text": "El miedo a su propia sombra lo tenía atrapado y le impedía ver la luz del sol.",
+      "author": "Robert Fisher - El caballero de la armadura oxidada"
+    },
+    {
+      "text": "El miedo al rechazo, al abandono, a no ser suficientemente bueno o querido, nos lleva a creer que necesitamos armaduras para protegernos, cuando en realidad lo que necesitamos es quitárnoslas para mostrar nuestra verdadera esencia y conectarnos auténticamente con los demás.",
+      "author": "Robert Fisher - El caballero de la armadura oxidada"
+    },
+    {
+      "text": "La vida es como un espejo: si sonríes, el espejo te devuelve la sonrisa; pero si muestras una cara larga, recibes lo mismo a cambio, por lo que siempre es mejor sonreír a la vida y mantener el corazón abierto a las posibilidades que nos ofrece cada día.",
+      "author": "Robert Fisher - El caballero de la armadura oxidada"
+    },
+    {
+      "text": "A veces, para encontrar el camino hacia la luz, es necesario pasar por la oscuridad, enfrentar nuestros miedos, sanar nuestras heridas y aprender las lecciones que la vida nos está enseñando para poder renacer con una armadura nueva y brillante, llena de amor y sabiduría.",
+      "author": "Robert Fisher - El caballero de la armadura oxidada"
+    },
+    {
+      "text": "Ser pobre no te hace humilde, ser humilde no significa que seas pobre.",
+      "author": "Pablo Escobar"
+    },
+    {
+      "text": "El verdadero modo de vengarse de un enemigo, es no asemejársele.",
+      "author": "Marco Aurelio"
+    },
+    {
+      "text": "Si no conviene, no lo hagas; si no es verdad, no lo digas. Sé dueño de tus inclinaciones.",
+      "author": "Marco Aurelio"
+    },
+    {
+      "text": "Todas las cosas se hallan entrelazadas entre sí y su común vínculo es sagrado y casi ninguna es extraña a la otra, porque todas están coordinadas y contribuyen al orden del mismo mundo.",
+      "author": "Marco Aurelio"
+    },
+    {
+      "text": "Me llamo Máximo Décimo Meridio, comandante de los ejércitos del Norte, general de las legiones Félix, leal servidor del verdadero emperador Marco Aurelio, padre de un hijo asesinado, marido de una mujer asesinada y alcanzaré mi venganza en esta vida o en la otra.",
+      "author": "Máximo Décimo Meridio - Gladiator"
+    },
+    {
+      "text": "Podrás amenazarme, encadenarme, encerrarme o exiliarme. Pero yo te recuerdo que ni Zeus podría quitarme el poder de decidir mi actitud.",
+      "author": "Epicteto"
+    },
+    {
+      "text": "Nada, a mi modo de ver, es una mejor prueba de una mente bien ordenada que la capacidad de un hombre de detenerse justo donde está y pasar algún tiempo en su propia compañía.",
+      "author": "Seneca"
+    },
+    {
+      "text": "Por mucho que lo intentes, por mucho que te esfuerces, es posible que todo salga mal. De hecho, es probable que la mayor parte de las cosas que creías que iban a salir de una manera, salgan de otra. Porque la realidad va a su aire. No puedes gobernarla tanto como crees.",
+      "author": "Así es la put* vida - Jordi Wild"
+    },
+    {
+      "text": "Este es mi gusto, no un buen gusto, no un mal gusto, pero sí mi gusto, del cual no me avergüenzo ni lo oculto. Este es mi camino, ¿dónde está el suyo?",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "text": "Errar es humano, pero más lo es culpar de ello a otros.",
+      "author": "Baltasar Gracián"
+    },
+    {
+      "text": "El pesimista se queja del viento, el optimista espera que este cambie, pero el realista ajusta las velas.",
+      "author": "William Wars"
+    },
+    {
+      "text": "Si haces lo que siempre has hecho, obtendrás lo que siempre has conseguido. No es lo que hacemos de vez en cuando lo que da forma a nuestras vidas, sino lo que hacemos constantemente.",
+      "author": "Tony Robbins"
+    },
+    {
+      "text": "Algo malo debe de tener el trabajo o los ricos ya lo habrían acaparado.",
+      "author": "Cantinflas"
+    },
+    {
+      "text": "La vida es como montar en bicicleta. Para mantener el equilibrio tienes que avanzar.",
+      "author": "Albert Einstein"
+    },
+    {
+      "text": "Qué maravilloso es que nadie tenga que esperar ni un segundo para empezar a mejorar el mundo.",
+      "author": "Anne Frank"
+    },
+    {
+      "text": "La felicidad es interior, no exterior; por lo tanto, no depende de lo que tenemos, sino de lo que somos.",
+      "author": "Pablo Neruda"
+    },
+    {
+      "text": "Hemos cambiado las cartas por mensajes de texto, las flores por fotos de ellas y la hermosa sensación de acariciar nuestra tez uno al otro, por una videollamada. ¿Dónde ha quedado el verdadero romance? ¿Dónde ha quedado la verdadera forma del amor? Expresar y sentir de manera tangible es lo que necesitamos.",
+      "author": "Eduardo Gómez"
+    },
+    {
+      "text": "De hecho son varias las canciones que hablan de ti y ni siquiera sé por qué escribo esto si apenas nos conocemos, sin embargo, he estado tan cerca del cielo cuando tus fauces conocí. Estoy muy sonriente, creo que debería dejar de pensar en ti.",
+      "author": "Eduardo Gómez - No solo una"
+    },
+    {
+      "text": "Por tus ojos verdes yo me perdería, sirena de aquellas que Ulises, sagaz, amaba y temía. Por tus ojos verdes yo me perdería. Por tus ojos verdes en lo que, fugaz, brillar suele, a veces, la melancolía; por tus ojos verdes tan llenos de paz, misteriosos como la esperanza mía; por tus ojos verdes, conjuro eficaz, yo me salvaría.",
+      "author": "Amado Nervo - Madrigal"
+    },
+    {
+      "text": "A veces tengo ganas de estar muerto para sentir, bajo la tierra húmeda de mis jugos, que me crece una flor rompiéndome el pecho, una flor, y decir: Esta flor, para usted.",
+      "author": "Nicolás Guillén - A veces"
+    },
+    {
+      "text": "A veces mis latidos son muy fuertes, solo a veces lejos de tu ausencia.",
+      "author": "Eduardo Gómez - Cosas Que Nunca Te Dije"
+    },
+    {
+      "text": "Dentro de mí echó raíces la idea de ser alguien para ti, ser la persona con la que mirarías las estrellas tiritar, cantarte mis canciones de amor y demostrarte quien soy. Como una flor inconcebible has crecido tú, echando raíces imaginarias.",
+      "author": "Eduardo Gómez - Cosas Que Nunca Te Dije"
+    },
+    {
+      "text": "La familia es como las ramas de un árbol, todos crecemos en direcciones diferentes pero nuestras raíces siguen siendo las mismas.",
+      "author": "Anónimo"
+    },
+    {
+      "text": "El amor de una familia es el mayor regalo que uno puede tener.",
+      "author": "Anónimo"
+    },
+    {
+      "text": "No me arrepiento de este amor, aunque me cueste el corazón. Amar es un milagro, y yo te amé como nunca jamás me imaginé.",
+      "author": "Attaque 77 - No Me Arrepiento De Este Amor"
+    },
+    {
+      "text": "Había una vez una niñita en un pueblo, la más bonita que jamás se hubiera visto; su madre estaba enloquecida con ella y su abuela mucho más todavía. Esta buena mujer le había mandado hacer una caperucita roja y le sentaba tanto que todos la llamaban Caperucita Roja.",
+      "author": "Charles Perrault - Caperucita Roja"
+    },
+    {
+      "text": "Tal vez no pensaba golpearlo, pero desgraciadamente le dio con precisión en la cabeza, de tal forma que el pobre Grillo apenas tuvo fuerzas para decir cri-cri-cri, quedando allí mismo tieso y pegado a la pared.",
+      "author": "Carlo Collodi - Las Aventuras De Pinocho"
+    },
+    {
+      "text": "Una zorra hambrienta, como viera unos racimos colgar de una parra, quiso apoderarse de ellos y no pudo. Marchándose, dijo para sí: \"Están verdes\".",
+      "author": "Esopo - La Zorra y Las Uvas"
+    },
+    {
+      "text": "Un lobo que se había atragantado con un hueso iba de un lado a otro buscando a quien lo curara. Al encontrarse con una garza, le pidió que le sacase el hueso a cambio de una retribución. Y aquélla metió su propia cabeza en la garganta del lobo, sacó el hueso y le reclamó la paga acordada. Él, respondiendo, dijo: \"¡Eh tú!, ¿no te contentas con haber sacado sana tu cabeza de la boca del lobo, sino que también pides paga?\".",
+      "author": "Esopo - El Lobo y la Garza"
+    },
+    {
+      "text": "El espejo que da su reflejo. En todo lo pinta tal como es. Mi cuerpo, que no tiene peso. Si escucho tu voz llamándome.",
+      "author": "Eres para mí - Julieta Venegas"
+    },
+    {
+      "text": "Hoy he seguido a Lima y a Belano durante todo el día. Hemos caminado, hemos tomado el metro, camiones, un pesero, hemos vuelto a caminar y durante todo el rato no hemos dejado de hablar. De vez en cuando ellos se detenían y entraban en casas particulares y yo entonces me tenía que quedar en la calle esperándolos. Cuando les pregunté qué era lo que hacían me dijeron que llevaban a cabo una investigación.",
+      "author": "Roberto Bolaño - Los Detectives Salvajes"
+    },
+    {
+      "text": "La cólera canta, oh diosa, del Pelida Aquiles, maldita, que causó a los aqueos incontables dolores, precipitó al Hades muchas valientes vidas de héroes y a ellos mismos los hizo presa para los perros y para todas las aves -y así cumplía el plan de Zeus-, desde que por primera vez se separaron tras haber reñido el Atrida, soberano de hombres, y Aquiles, de la casta de Zeus.",
+      "author": "Homero - Ilíada"
+    },
+    {
+      "text": "Musa, dime del hábil varón que en su largo extravío, tras haber arrasado el alcázar sagrado de Troya, conoció las ciudades y el genio de innúmeras gentes. Muchos males pasó por las rutas marinas luchando por sí mismo y su vida y la vuelta al hogar de sus hombres, pero a estos no pudo salvarlos con todo su empeño, que en las propias locuras hallaron la muerte.",
+      "author": "Homero - Odisea"
+    },
+    {
+      "text": "Mientras Macondo celebraba la reconquista de los recuerdos, José Arcadio Buendía y Melquíades le sacudieron el polvo a su vieja amistad. El gitano iba dispuesto a quedarse en el pueblo. Había estado en la muerte, en efecto, pero había regresado porque no pudo soportar la soledad. Repudiado por su tribu, desprovisto de toda facultad sobrenatural como castigo por su fidelidad a la vida, decidió refugiarse en aquel rincón del mundo todavía no descubierto por la muerte, dedicado a la explotación de un laboratorio de daguerrotipia.",
+      "author": "Cien Años de Soledad - Gabriel García Márquez"
+    },
+    {
+      "text": "Calla, he dicho. ¿No hay nadie aquí? Debía contestarme mi hijo. Pero mi hijo es ya un brazado de flores secas. Mi hijo es ya una voz oscura detrás de los montes. ¿Te quieres callar? No quiero llantos en esta casa. Vuestras lágrimas son lágrimas de los ojos nada más, y las mías vendrán cuando yo esté sola, de las plantas de mis pies, de mis raíces, y serán más ardientes que la sangre.",
+      "author": "Federico García Lorca - Bodas de Sangre"
+    },
+    {
+      "text": "No debo tener miedo. El miedo mata la mente. El miedo es la pequeña muerte que conduce a la destrucción total. Afrontaré mi miedo. Permitiré que pase sobre mí y a través de mí. Y cuando haya pasado, giraré mi ojo interior para escrutar su camino. Allá donde haya pasado el miedo ya no habrá nada. Solo estaré yo.",
+      "author": "Frank Herbert - Dune"
+    },
+    {
+      "text": "Su traje era sencillo, de bota a la inglesa, pantalón y chaqueta de paño fino azul, sombrero redondo, sin más distintivo que el sable y la faja de malla de seda de color carmesí",
+      "author": "Dámaso A. Larrañaga - Viaje a Paysandú"
+    },
+    {
+      "text": "El que desea llegar, no encuentra impedimento en el engaño de la niebla",
+      "author": "Pedro Prado - La niebla"
+    },
+    {
+      "text": "Junto a la casa cerrada están en flor las magnolias y en flor están todas blancas las coronitas de novia.",
+      "author": "Juana de Ibarbourou - La casa vieja"
+    },
+    {
+      "text": "El cielo extiende su maravilla más azul, y esplende, con brillo nuevo, el sol.",
+      "author": "Rafael Alberto Arrieta - Es la primaveral..."
+    },
+    {
+      "text": "Tú me enseñaste que lo que arde congrega a los seres en torno de su llama",
+      "author": "Gabriela Mistral - El brasero"
+    },
+    {
+      "text": "Sobre el remanso azul, agudo asecha desde un lánguido gajo del sauzal, en inminente inclinación de flecha la lentitud profunda del caudal.",
+      "author": "Leopoldo Lugones - El martín pescador"
+    },
+    {
+      "text": "El cielo se alejaba. Mudábanse los tintes áureos de las nubes en rojos, los rojos en pardos.",
+      "author": "Ricardo Güiraldes - La pesca"
+    },
+    {
+      "text": "Vamos llegando. En el horizonte se comienza a ver un mar azul en calma. Oro derretido es el sol en la siesta de fuego.",
+      "author": "Arturo Capdevila - En Miramar"
+    },
+    {
+      "text": "Corre, corre, mi caballo, por la veredita blanca, que bien sabes el camino donde te guían mis ansias.",
+      "author": "Manuel Machado - Balada matinal"
+    },
+    {
+      "text": "Al sur de las casas, había un cuadro de paraísos, criollos viejos, fundadores de la estancia, compañeros de higueras dentro de un cerco de cinacina.",
+      "author": "Ricardo Güiraldes - Un monte"
+    },
+    {
+      "text": "Los molinos, en lo alto de la colina, movían lentamente sus aspas; la llanura bermeja, monótona, rasa, se extendía abajo.",
+      "author": "Azorín - Llegada a un pueblo"
+    },
+    {
+      "text": "Como gotas de sangre que sonríen, las margaritas rojas se despiertan; despiertan las azules y esas hijas sin nombre de la hierba, de un amarillo y blanco deslumbrantes, que en el campo se cuentan como en las claras noches de diciembre se cuentan en el cielo las estrellas.",
+      "author": "Juan Zorilla de San Martín - Amanecer"
+    },
+    {
+      "text": "La claridad naciente va ganando colinas y laderas; tras ella el sol dispara victorioso, a través de los aires, sus saetas.",
+      "author": "Juan Zorilla de San Martín - Amanecer"
+    },
+    {
+      "text": "Nunca a vivirse vuelven las horas malgastadas, y cuando a morir tocan, hallamos que nos faltan.",
+      "author": "Eduardo Marquina - Consejos Maternales"
+    },
+    {
+      "text": "Afanosas, las arañas zurcen los vidrios rotos de la casa abandonada, y continuos calofríos estremecen los yerbajos del patio.",
+      "author": "Pedro Prado - La casa abandonada"
+    },
+    {
+      "text": "Lejos, encima del mar, el cielo estaba blanco, como encandecido de tanta lumbre, y las paradas aguas, que de tanto en tanto hacían una blanda palpitación, ofrecían el sol infinitamente roto.",
+      "author": "Gabriel Miró - En el puerto"
+    },
+    {
+      "text": "Las virtudes, en los hombres, como en los animales, como en las cosas, no se dan todas juntas, sino, más bien, repartidas.",
+      "author": "Fernán Silva Valdés - Los dos petisos"
+    },
+    {
+      "text": "En medio del humo que forma el tabaco ve el viejo el lejano, brumoso país, a donde una tarde caliente y dorada, tendidas las velas, partió el bergantín...",
+      "author": "Rubén Dario - Sinfonía en gris mayor"
+    },
+    {
+      "text": "El paisaje, sacudiendo con vago esfuerzo el letargo pesado del bochorno, empezaba a agitarse soñoliento.",
+      "author": "Manuel P. Bernárdez - Puesta de sol en el Arequita"
+    },
+    {
+      "text": "El cielo era una sola claridad quebradiza, como una mica, que palpitaba sin cesar.",
+      "author": "Arturo Capdevila - Tempestad"
+    },
+    {
+      "text": "Aquella verde pompa de trigales, yace en gavillas de oro por el suelo que el sol oblicuo de la tarde estiva tuesta implacablemente con el fuego.",
+      "author": "Fernández Moreno - Verano"
+    },
+    {
+      "text": "En quietud amorosa la llanura se baña; recórtase en el cielo soberbia la montaña.",
+      "author": "Enrique de Mesa - La alegre carreta"
+    },
+    {
+      "text": "Aquél que tiene un porqué para vivir, puede soportar casi cualquier cómo.",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "text": "Es mucho más difícil crear que destruir, por eso solo los cobardes se decantan por lo segundo.",
+      "author": "Steve - Una película de Minecraft"
+    },
+    {
+      "text": "Caminante, no hay camino, se hace camino al andar. Al andar se hace el camino, y al volver la vista atrás se ve la senda que nunca se ha de volver a pisar.",
+      "author": "Antonio Machado"
     }
   ]
 }
