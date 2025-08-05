@@ -59,7 +59,7 @@
                     </StackPanel>
                 </GroupBox>
                 
-                <GroupBox Header="Timing Settings" Margin="0,0,0,15" BorderBrush="White">
+                <GroupBox Header="Recognition Settings" Margin="0,0,0,15" BorderBrush="White">
                     <StackPanel Margin="10">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -67,13 +67,6 @@
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="Accuracy Threshold (%):" VerticalAlignment="Center"/>
                             <TextBox Grid.Column="1" x:Name="AccuracyThresholdText" Width="60" Text="90" HorizontalContentAlignment="Center"/>
-                        </Grid>
-                        <Grid Margin="0,5,0,0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" Text="Max Pause Time (seconds):" VerticalAlignment="Center"/>
-                            <TextBox Grid.Column="1" x:Name="MaxPauseTimeText" Width="60" Text="3" HorizontalContentAlignment="Center"/>
                         </Grid>
                     </StackPanel>
                 </GroupBox>

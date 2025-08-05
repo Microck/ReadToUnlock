@@ -13,7 +13,6 @@ public class Config
 
     // Recognition Settings
     public int AccuracyThreshold { get; set; } = 90;
-    public int MaxPauseTime { get; set; } = 3;
 
     // Emergency Settings
     public string EmergencyPassword { get; set; } = "unlock";

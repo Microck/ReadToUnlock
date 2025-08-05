@@ -24,6 +24,10 @@ public partial class ReadingWindow : Window
             PassageText.Text = quote.Text;
             _currentQuoteIndex++;
         }
+        else
+        {
+            PassageText.Text = "No quotes available. Please check that quote files are in the correct location.";
+        }
     }
 
     private void StartButton_Click(object sender, RoutedEventArgs e)

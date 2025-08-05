@@ -21,7 +21,6 @@ public partial class SettingsWindow : Window
         SpanishRequiredText.Text = config.SpanishRequired.ToString();
         SingleLanguageModeCheck.IsChecked = config.SingleLanguageMode;
         AccuracyThresholdText.Text = config.AccuracyThreshold.ToString();
-        MaxPauseTimeText.Text = config.MaxPauseTime.ToString();
         EmergencyPasswordBox.Password = config.EmergencyPassword;
         EmergencyHotkeyText.Text = config.EmergencyHotkey;
     }
@@ -39,7 +38,6 @@ public partial class SettingsWindow : Window
         config.SpanishRequired = int.Parse(SpanishRequiredText.Text);
         config.SingleLanguageMode = SingleLanguageModeCheck.IsChecked ?? false;
         config.AccuracyThreshold = int.Parse(AccuracyThresholdText.Text);
-        config.MaxPauseTime = int.Parse(MaxPauseTimeText.Text);
         config.EmergencyPassword = EmergencyPasswordBox.Password;
         config.EmergencyHotkey = EmergencyHotkeyText.Text;
 
@@ -98,11 +96,7 @@ public partial class SettingsWindow : Window
             return false;
         }
 
-        if (!int.TryParse(MaxPauseTimeText.Text, out var pauseTime) || pauseTime < 1)
-        {
-            MessageBox.Show("Please enter a valid positive number for max pause time.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            return false;
-        }
+
 
         return true;
     }

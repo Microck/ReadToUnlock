@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.IO;
+using System;
 
 namespace ReadToUnlock.Services;
 
@@ -30,16 +31,22 @@ public class QuoteService
     {
         try
         {
-            if (File.Exists(fileName))
+            var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            var fullPath = Path.Combine(baseDirectory, fileName);
+            
+            if (File.Exists(fullPath))
             {
-                var json = File.ReadAllText(fileName);
+                var json = File.ReadAllText(fullPath);
                 var collection = JsonSerializer.Deserialize<QuoteCollection>(json);
                 return collection?.Quotes ?? new List<Quote>();
+            }
+            else
+            {
+                Console.WriteLine($"Quote file not found: {fullPath}");
             }
         }
         catch (Exception ex)
         {
-            // Log error or return empty list
             Console.WriteLine($"Error loading {fileName}: {ex.Message}");
         }
         
