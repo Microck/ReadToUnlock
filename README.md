@@ -1,6 +1,6 @@
-# Quote-Reader
+# ReadToUnlock
 
-A simple WPF application for reading practice with configurable quotes.
+A simple WPF application for reading practice with configurable quotes. Initial idea was completely different so just ignore the name, this is a bad project anyways. Feel free to steal it or whatever
 
 ## What it does
 - Displays quotes for reading practice
