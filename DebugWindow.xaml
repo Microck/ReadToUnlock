@@ -27,6 +27,7 @@
         </ScrollViewer>
         
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button Content="Reload Quotes" Width="100" Height="30" Margin="5" Click="ReloadQuotes_Click"/>
             <Button Content="Copy to Clipboard" Width="120" Height="30" Margin="5" Click="CopyToClipboard_Click"/>
             <Button Content="Close" Width="80" Height="30" Margin="5" Click="Close_Click"/>
         </StackPanel>

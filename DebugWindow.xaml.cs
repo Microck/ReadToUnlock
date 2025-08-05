@@ -45,6 +45,16 @@ public partial class DebugWindow : Window
         sb.AppendLine($"Executable Path: {System.Reflection.Assembly.GetExecutingAssembly().Location}");
         sb.AppendLine();
         
+        // Test actual loading
+        sb.AppendLine("=== QUOTE LOADING TEST ===");
+        var quoteService = new QuoteService(App.ConfigService);
+        var englishCount = quoteService.GetRandomEnglishQuote() != null ? 1 : 0;
+        var spanishCount = quoteService.GetRandomSpanishQuote() != null ? 1 : 0;
+        
+        sb.AppendLine($"English quotes loaded: {englishCount}");
+        sb.AppendLine($"Spanish quotes loaded: {spanishCount}");
+        sb.AppendLine();
+        
         // File details
         sb.AppendLine("=== FILE DETAILS ===");
         
@@ -54,8 +64,20 @@ public partial class DebugWindow : Window
             {
                 var content = File.ReadAllText(englishResolved);
                 sb.AppendLine($"English file size: {content.Length} bytes");
-                sb.AppendLine($"English file preview: {content.Substring(0, Math.Min(200, content.Length))}");
+                sb.AppendLine($"English file content:");
+                sb.AppendLine(content);
                 sb.AppendLine();
+                
+                // Test JSON parsing
+                try
+                {
+                    var collection = System.Text.Json.JsonSerializer.Deserialize<QuoteCollection>(content);
+                    sb.AppendLine($"JSON parsing test: {collection?.Quotes?.Count ?? 0} quotes found");
+                }
+                catch (Exception ex)
+                {
+                    sb.AppendLine($"JSON parsing error: {ex.Message}");
+                }
             }
             catch (Exception ex)
             {
@@ -69,30 +91,25 @@ public partial class DebugWindow : Window
             {
                 var content = File.ReadAllText(spanishResolved);
                 sb.AppendLine($"Spanish file size: {content.Length} bytes");
-                sb.AppendLine($"Spanish file preview: {content.Substring(0, Math.Min(200, content.Length))}");
+                sb.AppendLine($"Spanish file content:");
+                sb.AppendLine(content);
                 sb.AppendLine();
+                
+                // Test JSON parsing
+                try
+                {
+                    var collection = System.Text.Json.JsonSerializer.Deserialize<QuoteCollection>(content);
+                    sb.AppendLine($"JSON parsing test: {collection?.Quotes?.Count ?? 0} quotes found");
+                }
+                catch (Exception ex)
+                {
+                    sb.AppendLine($"JSON parsing error: {ex.Message}");
+                }
             }
             catch (Exception ex)
             {
                 sb.AppendLine($"Error reading Spanish file: {ex.Message}");
             }
-        }
-        
-        // Directory listing
-        sb.AppendLine("=== DIRECTORY CONTENTS ===");
-        try
-        {
-            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            var files = Directory.GetFiles(baseDir, "*.json");
-            sb.AppendLine($"JSON files in base directory:");
-            foreach (var file in files)
-            {
-                sb.AppendLine($"  {Path.GetFileName(file)}");
-            }
-        }
-        catch (Exception ex)
-        {
-            sb.AppendLine($"Error listing directory: {ex.Message}");
         }
         
         DebugText.Text = sb.ToString();
@@ -107,5 +124,10 @@ public partial class DebugWindow : Window
     private void Close_Click(object sender, RoutedEventArgs e)
     {
         Close();
+    }
+
+    private void ReloadQuotes_Click(object sender, RoutedEventArgs e)
+    {
+        GenerateDebugInfo();
     }
 }

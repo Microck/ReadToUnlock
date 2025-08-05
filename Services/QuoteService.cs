@@ -99,17 +99,27 @@ public class QuoteService
             {
                 var json = File.ReadAllText(resolvedPath);
                 Console.WriteLine($"File found, size: {json.Length} characters");
+                Console.WriteLine($"JSON content: {json}");
                 
                 try
                 {
-                    var collection = JsonSerializer.Deserialize<QuoteCollection>(json);
+                    // Try different JSON deserialization approaches
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                        AllowTrailingCommas = true,
+                        ReadCommentHandling = JsonCommentHandling.Skip
+                    };
+                    
+                    var collection = JsonSerializer.Deserialize<QuoteCollection>(json, options);
                     var quotes = collection?.Quotes ?? new List<Quote>();
+                    
                     Console.WriteLine($"Successfully parsed {quotes.Count} quotes from {resolvedPath}");
                     
-                    // Debug: Show first quote if available
-                    if (quotes.Count > 0)
+                    // Debug: Show all quotes
+                    for (int i = 0; i < Math.Min(3, quotes.Count); i++)
                     {
-                        Console.WriteLine($"First quote: {quotes[0].Text.Substring(0, Math.Min(50, quotes[0].Text.Length))}...");
+                        Console.WriteLine($"Quote {i+1}: {quotes[i].Text.Substring(0, Math.Min(50, quotes[i].Text.Length))}...");
                     }
                     
                     return quotes;
@@ -117,7 +127,10 @@ public class QuoteService
                 catch (JsonException jex)
                 {
                     Console.WriteLine($"JSON parsing error for {resolvedPath}: {jex.Message}");
-                    Console.WriteLine($"JSON content: {json}");
+                    Console.WriteLine($"LineNumber: {jex.LineNumber}, BytePosition: {jex.BytePositionInLine}");
+                    
+                    // Try manual parsing as fallback
+                    return ParseQuotesManually(json);
                 }
             }
             else
@@ -132,6 +145,55 @@ public class QuoteService
         }
         
         return new List<Quote>();
+    }
+
+    private List<Quote> ParseQuotesManually(string json)
+    {
+        try
+        {
+            // Simple manual parsing for basic JSON structure
+            var quotes = new List<Quote>();
+            
+            // Look for "quotes" array
+            var quotesStart = json.IndexOf("\"quotes\":[");
+            if (quotesStart >= 0)
+            {
+                var arrayStart = json.IndexOf('[', quotesStart);
+                var arrayEnd = json.LastIndexOf(']');
+                
+                if (arrayStart >= 0 && arrayEnd > arrayStart)
+                {
+                    var arrayContent = json.Substring(arrayStart + 1, arrayEnd - arrayStart - 1);
+                    var quoteObjects = arrayContent.Split(new[] { "}," }, StringSplitOptions.RemoveEmptyEntries);
+                    
+                    foreach (var quoteObj in quoteObjects)
+                    {
+                        var cleanObj = quoteObj.Trim().TrimEnd('}');
+                        
+                        var textStart = cleanObj.IndexOf("\"text\":\"") + 8;
+                        var textEnd = cleanObj.IndexOf("\"", textStart);
+                        var authorStart = cleanObj.IndexOf("\"author\":\"") + 10;
+                        var authorEnd = cleanObj.IndexOf("\"", authorStart);
+                        
+                        if (textStart > 7 && textEnd > textStart && authorStart > 9 && authorEnd > authorStart)
+                        {
+                            var text = cleanObj.Substring(textStart, textEnd - textStart);
+                            var author = cleanObj.Substring(authorStart, authorEnd - authorStart);
+                            
+                            quotes.Add(new Quote { Text = text, Author = author });
+                        }
+                    }
+                }
+            }
+            
+            Console.WriteLine($"Manually parsed {quotes.Count} quotes");
+            return quotes;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Manual parsing failed: {ex.Message}");
+            return new List<Quote>();
+        }
     }
 
     public Quote? GetRandomQuote(string? language = null)
