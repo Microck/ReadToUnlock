@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Windows.Input;
 
 namespace ReadToUnlock;
 
@@ -9,7 +10,12 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void SettingsMenu_Click(object sender, RoutedEventArgs e)
+    private void StartReading_Click(object sender, RoutedEventArgs e)
+    {
+        StartReadingSession();
+    }
+
+    private void SettingsButton_Click(object sender, RoutedEventArgs e)
     {
         var settingsWindow = new SettingsWindow
         {
@@ -18,13 +24,27 @@ public partial class MainWindow : Window
         settingsWindow.ShowDialog();
     }
 
-    private void ExitMenu_Click(object sender, RoutedEventArgs e)
+    private void ExitButton_Click(object sender, RoutedEventArgs e)
     {
         Application.Current.Shutdown();
     }
 
-    private void StartReading_Click(object sender, RoutedEventArgs e)
+    private void Window_KeyDown(object sender, KeyEventArgs e)
     {
-        MessageBox.Show("Reading session started!", "ReadToUnlock", MessageBoxButton.OK, MessageBoxImage.Information);
+        if (e.Key == Key.Escape)
+        {
+            Application.Current.Shutdown();
+        }
+        else if (e.Key == Key.S && Keyboard.Modifiers == ModifierKeys.Control)
+        {
+            SettingsButton_Click(sender, e);
+        }
+    }
+
+    private void StartReadingSession()
+    {
+        var readingWindow = new ReadingWindow();
+        readingWindow.Show();
+        this.Hide();
     }
 }
