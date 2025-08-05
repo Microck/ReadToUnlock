@@ -1,4 +1,5 @@
 using System.Windows;
+using Microsoft.Win32;
 using ReadToUnlock.Models;
 
 namespace ReadToUnlock;
@@ -21,6 +22,8 @@ public partial class SettingsWindow : Window
         SpanishRequiredText.Text = config.SpanishRequired.ToString();
         SingleLanguageModeCheck.IsChecked = config.SingleLanguageMode;
         AccuracyThresholdText.Text = config.AccuracyThreshold.ToString();
+        EnglishQuotesPathText.Text = config.EnglishQuotesPath;
+        SpanishQuotesPathText.Text = config.SpanishQuotesPath;
         EmergencyPasswordBox.Password = config.EmergencyPassword;
         EmergencyHotkeyText.Text = config.EmergencyHotkey;
     }
@@ -38,6 +41,8 @@ public partial class SettingsWindow : Window
         config.SpanishRequired = int.Parse(SpanishRequiredText.Text);
         config.SingleLanguageMode = SingleLanguageModeCheck.IsChecked ?? false;
         config.AccuracyThreshold = int.Parse(AccuracyThresholdText.Text);
+        config.EnglishQuotesPath = EnglishQuotesPathText.Text;
+        config.SpanishQuotesPath = SpanishQuotesPathText.Text;
         config.EmergencyPassword = EmergencyPasswordBox.Password;
         config.EmergencyHotkey = EmergencyHotkeyText.Text;
 
@@ -56,6 +61,36 @@ public partial class SettingsWindow : Window
     {
         App.ConfigService.ResetToDefaults();
         LoadSettings();
+    }
+
+    private void BrowseEnglishButton_Click(object sender, RoutedEventArgs e)
+    {
+        var openFileDialog = new Microsoft.Win32.OpenFileDialog
+        {
+            Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+            Title = "Select English Quotes File",
+            DefaultExt = ".json"
+        };
+
+        if (openFileDialog.ShowDialog() == true)
+        {
+            EnglishQuotesPathText.Text = openFileDialog.FileName;
+        }
+    }
+
+    private void BrowseSpanishButton_Click(object sender, RoutedEventArgs e)
+    {
+        var openFileDialog = new Microsoft.Win32.OpenFileDialog
+        {
+            Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+            Title = "Select Spanish Quotes File",
+            DefaultExt = ".json"
+        };
+
+        if (openFileDialog.ShowDialog() == true)
+        {
+            SpanishQuotesPathText.Text = openFileDialog.FileName;
+        }
     }
 
     private bool ValidateInputs()

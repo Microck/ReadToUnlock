@@ -71,6 +71,30 @@
                     </StackPanel>
                 </GroupBox>
                 
+                <GroupBox Header="File Settings" Margin="0,0,0,15" BorderBrush="White">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="English Quotes File:" Margin="0,0,0,5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="EnglishQuotesPathText" Grid.Column="0" Text="english_quotes.json"/>
+                            <Button x:Name="BrowseEnglishButton" Grid.Column="1" Content="Browse" Width="60" Margin="5,0,0,0" Click="BrowseEnglishButton_Click"/>
+                        </Grid>
+                        
+                        <TextBlock Text="Spanish Quotes File:" Margin="0,10,0,5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="SpanishQuotesPathText" Grid.Column="0" Text="spanish_quotes.json"/>
+                            <Button x:Name="BrowseSpanishButton" Grid.Column="1" Content="Browse" Width="60" Margin="5,0,0,0" Click="BrowseSpanishButton_Click"/>
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
                 <GroupBox Header="Emergency Settings" Margin="0,0,0,15" BorderBrush="White">
                     <StackPanel Margin="10">
                         <TextBlock Text="Emergency Password:" Margin="0,0,0,5"/>

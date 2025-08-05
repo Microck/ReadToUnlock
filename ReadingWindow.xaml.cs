@@ -12,7 +12,7 @@ public partial class ReadingWindow : Window
     public ReadingWindow()
     {
         InitializeComponent();
-        _quoteService = new QuoteService();
+        _quoteService = new QuoteService(App.ConfigService);
         LoadNextPassage();
     }
 

@@ -18,17 +18,25 @@ public class QuoteCollection
 
 public class QuoteService
 {
-    private readonly List<Quote> _englishQuotes;
-    private readonly List<Quote> _spanishQuotes;
+    private List<Quote> _englishQuotes = new();
+    private List<Quote> _spanishQuotes = new();
     private readonly Random _random = new();
 
-    public QuoteService()
+    private readonly ConfigService _configService;
+
+    public QuoteService(ConfigService configService)
     {
-        _englishQuotes = LoadQuotes("english_quotes.json");
-        _spanishQuotes = LoadQuotes("spanish_quotes.json");
+        _configService = configService;
+        ReloadQuotes();
+    }
+
+    public void ReloadQuotes()
+    {
+        _englishQuotes = LoadQuotes(_configService.Config.EnglishQuotesPath);
+        _spanishQuotes = LoadQuotes(_configService.Config.SpanishQuotesPath);
         
-        Console.WriteLine($"Loaded {_englishQuotes.Count} English quotes");
-        Console.WriteLine($"Loaded {_spanishQuotes.Count} Spanish quotes");
+        Console.WriteLine($"Loaded {_englishQuotes.Count} English quotes from {_configService.Config.EnglishQuotesPath}");
+        Console.WriteLine($"Loaded {_spanishQuotes.Count} Spanish quotes from {_configService.Config.SpanishQuotesPath}");
         
         // Add fallback quotes if files are empty
         if (_englishQuotes.Count == 0)

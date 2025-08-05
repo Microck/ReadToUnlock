@@ -14,6 +14,10 @@ public class Config
     // Recognition Settings
     public int AccuracyThreshold { get; set; } = 90;
 
+    // File Settings
+    public string EnglishQuotesPath { get; set; } = "english_quotes.json";
+    public string SpanishQuotesPath { get; set; } = "spanish_quotes.json";
+
     // Emergency Settings
     public string EmergencyPassword { get; set; } = "unlock";
     public string EmergencyHotkey { get; set; } = "Ctrl+Shift+U";
