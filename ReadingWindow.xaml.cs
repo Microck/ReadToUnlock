@@ -42,11 +42,23 @@ public partial class ReadingWindow : Window
         LoadNextPassage();
     }
 
+    private void ReloadQuotes()
+    {
+        _quoteService.ReloadQuotes();
+        LoadNextPassage();
+    }
+
     private void BackButton_Click(object sender, RoutedEventArgs e)
     {
         var mainWindow = new MainWindow();
         mainWindow.Show();
         this.Close();
+    }
+
+    private void DebugButton_Click(object sender, RoutedEventArgs e)
+    {
+        var debugWindow = new DebugWindow();
+        debugWindow.ShowDialog();
     }
 
     private void Window_KeyDown(object sender, KeyEventArgs e)
