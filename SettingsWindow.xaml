@@ -1,0 +1,99 @@
+<Window x:Class="ReadToUnlock.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" 
+        Height="550" 
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        Background="Black"
+        Foreground="White">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="Configuration Settings" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Margin="10">
+                
+                <GroupBox Header="Passage Settings" Margin="0,0,0,15" BorderBrush="White">
+                    <StackPanel Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Minimum Words:" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="MinWordsText" Width="60" Text="60" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="0,5,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Maximum Words:" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="MaxWordsText" Width="60" Text="100" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+                
+                <GroupBox Header="Language Settings" Margin="0,0,0,15" BorderBrush="White">
+                    <StackPanel Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="English Passages Required:" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="EnglishRequiredText" Width="60" Text="1" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="0,5,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Spanish Passages Required:" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="SpanishRequiredText" Width="60" Text="1" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                        <CheckBox x:Name="SingleLanguageModeCheck" Content="Single Language Mode" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+                
+                <GroupBox Header="Timing Settings" Margin="0,0,0,15" BorderBrush="White">
+                    <StackPanel Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Accuracy Threshold (%):" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="AccuracyThresholdText" Width="60" Text="90" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="0,5,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Max Pause Time (seconds):" VerticalAlignment="Center"/>
+                            <TextBox Grid.Column="1" x:Name="MaxPauseTimeText" Width="60" Text="3" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+                
+                <GroupBox Header="Emergency Settings" Margin="0,0,0,15" BorderBrush="White">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Emergency Password:" Margin="0,0,0,5"/>
+                        <PasswordBox x:Name="EmergencyPasswordBox"/>
+                        <TextBlock Text="Emergency Hotkey:" Margin="0,10,0,5"/>
+                        <TextBox x:Name="EmergencyHotkeyText" Text="Ctrl+Shift+U"/>
+                    </StackPanel>
+                </GroupBox>
+                
+            </StackPanel>
+        </ScrollViewer>
+        
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button x:Name="ResetButton" Content="Reset to Defaults" Width="120" Height="30" Margin="0,0,10,0" Click="ResetButton_Click"/>
+            <Button x:Name="CancelButton" Content="Cancel" Width="80" Height="30" Margin="0,0,10,0" Click="CancelButton_Click"/>
+            <Button x:Name="SaveButton" Content="Save" Width="80" Height="30" Click="SaveButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
