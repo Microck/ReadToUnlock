@@ -26,7 +26,8 @@ public partial class ReadingWindow : Window
         }
         else
         {
-            PassageText.Text = "No quotes available. Please check that quote files are in the correct location.";
+            var config = App.ConfigService.Config;
+            PassageText.Text = $"No quotes loaded.\n\nCurrent paths:\nEnglish: {config.EnglishQuotesPath}\nSpanish: {config.SpanishQuotesPath}\n\nPlease check Settings > File Settings to configure correct paths.";
         }
     }
 

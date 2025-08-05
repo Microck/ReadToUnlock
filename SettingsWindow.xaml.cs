@@ -1,6 +1,8 @@
 using System.Windows;
+using System.IO;
 using Microsoft.Win32;
 using ReadToUnlock.Models;
+using ReadToUnlock.Services;
 
 namespace ReadToUnlock;
 
@@ -61,6 +63,27 @@ public partial class SettingsWindow : Window
     {
         App.ConfigService.ResetToDefaults();
         LoadSettings();
+    }
+
+    private void ValidateButton_Click(object sender, RoutedEventArgs e)
+    {
+        var config = App.ConfigService.Config;
+        
+        var englishPath = QuoteService.ResolvePath(config.EnglishQuotesPath);
+        var spanishPath = QuoteService.ResolvePath(config.SpanishQuotesPath);
+        
+        var englishExists = File.Exists(englishPath);
+        var spanishExists = File.Exists(spanishPath);
+        
+        var message = $"File Validation Results:\n\n" +
+                     $"English quotes: {(englishExists ? "✓ Found" : "✗ Not found")}\n" +
+                     $"  Path: {englishPath}\n\n" +
+                     $"Spanish quotes: {(spanishExists ? "✓ Found" : "✗ Not found")}\n" +
+                     $"  Path: {spanishPath}\n\n" +
+                     $"If files are not found, please use the Browse buttons to select the correct files.";
+        
+        MessageBox.Show(message, "File Validation", MessageBoxButton.OK, 
+                       englishExists && spanishExists ? MessageBoxImage.Information : MessageBoxImage.Warning);
     }
 
     private void BrowseEnglishButton_Click(object sender, RoutedEventArgs e)

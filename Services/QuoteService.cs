@@ -32,24 +32,40 @@ public class QuoteService
 
     public void ReloadQuotes()
     {
-        _englishQuotes = LoadQuotes(_configService.Config.EnglishQuotesPath);
-        _spanishQuotes = LoadQuotes(_configService.Config.SpanishQuotesPath);
+        Console.WriteLine("=== Reloading Quotes ===");
         
-        Console.WriteLine($"Loaded {_englishQuotes.Count} English quotes from {_configService.Config.EnglishQuotesPath}");
-        Console.WriteLine($"Loaded {_spanishQuotes.Count} Spanish quotes from {_configService.Config.SpanishQuotesPath}");
+        var englishPath = _configService.Config.EnglishQuotesPath;
+        var spanishPath = _configService.Config.SpanishQuotesPath;
         
-        // Add fallback quotes if files are empty
-        if (_englishQuotes.Count == 0)
+        Console.WriteLine($"Configured English path: {englishPath}");
+        Console.WriteLine($"Configured Spanish path: {spanishPath}");
+        
+        _englishQuotes = LoadQuotes(englishPath);
+        _spanishQuotes = LoadQuotes(spanishPath);
+        
+        Console.WriteLine($"Final count - English: {_englishQuotes.Count}, Spanish: {_spanishQuotes.Count}");
+        
+        // Only use fallback if truly no quotes loaded
+        if (_englishQuotes.Count == 0 && !File.Exists(ResolvePath(englishPath)))
         {
             _englishQuotes = GetFallbackEnglishQuotes();
-            Console.WriteLine("Using fallback English quotes");
+            Console.WriteLine("Using fallback English quotes - file not found or empty");
         }
         
-        if (_spanishQuotes.Count == 0)
+        if (_spanishQuotes.Count == 0 && !File.Exists(ResolvePath(spanishPath)))
         {
             _spanishQuotes = GetFallbackSpanishQuotes();
-            Console.WriteLine("Using fallback Spanish quotes");
+            Console.WriteLine("Using fallback Spanish quotes - file not found or empty");
         }
+    }
+
+    public static string ResolvePath(string path)
+    {
+        if (Path.IsPathRooted(path))
+            return path;
+        
+        var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        return Path.Combine(baseDirectory, path);
     }
 
     private List<Quote> GetFallbackEnglishQuotes()
@@ -72,54 +88,46 @@ public class QuoteService
         };
     }
 
-    private List<Quote> LoadQuotes(string fileName)
+    private List<Quote> LoadQuotes(string filePath)
     {
         try
         {
-            var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            var fullPath = Path.Combine(baseDirectory, fileName);
+            var resolvedPath = ResolvePath(filePath);
+            Console.WriteLine($"Attempting to load quotes from: {resolvedPath}");
             
-            // Debug: Check all possible paths
-            Console.WriteLine($"Looking for {fileName} at: {fullPath}");
-            Console.WriteLine($"File exists: {File.Exists(fullPath)}");
-            
-            // Also check the project root
-            var projectPath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
-            Console.WriteLine($"Also checking project path: {projectPath} - exists: {File.Exists(projectPath)}");
-            
-            // Check if we're in bin/Debug or bin/Release and go up to project root
-            var upPath = Path.Combine(baseDirectory, "..", "..", "..", fileName);
-            Console.WriteLine($"Checking up path: {upPath} - exists: {File.Exists(upPath)}");
-            
-            string[] pathsToCheck = { fullPath, projectPath, upPath };
-            
-            foreach (var path in pathsToCheck)
+            if (File.Exists(resolvedPath))
             {
-                if (File.Exists(path))
+                var json = File.ReadAllText(resolvedPath);
+                Console.WriteLine($"File found, size: {json.Length} characters");
+                
+                try
                 {
-                    var json = File.ReadAllText(path);
-                    Console.WriteLine($"Successfully loaded {fileName} from {path}");
-                    Console.WriteLine($"JSON content preview: {json.Substring(0, Math.Min(100, json.Length))}...");
+                    var collection = JsonSerializer.Deserialize<QuoteCollection>(json);
+                    var quotes = collection?.Quotes ?? new List<Quote>();
+                    Console.WriteLine($"Successfully parsed {quotes.Count} quotes from {resolvedPath}");
                     
-                    try
+                    // Debug: Show first quote if available
+                    if (quotes.Count > 0)
                     {
-                        var collection = JsonSerializer.Deserialize<QuoteCollection>(json);
-                        var quotes = collection?.Quotes ?? new List<Quote>();
-                        Console.WriteLine($"Parsed {quotes.Count} quotes from {fileName}");
-                        return quotes;
+                        Console.WriteLine($"First quote: {quotes[0].Text.Substring(0, Math.Min(50, quotes[0].Text.Length))}...");
                     }
-                    catch (JsonException jex)
-                    {
-                        Console.WriteLine($"JSON parsing error: {jex.Message}");
-                    }
+                    
+                    return quotes;
+                }
+                catch (JsonException jex)
+                {
+                    Console.WriteLine($"JSON parsing error for {resolvedPath}: {jex.Message}");
+                    Console.WriteLine($"JSON content: {json}");
                 }
             }
-            
-            Console.WriteLine($"Quote file not found in any location: {fileName}");
+            else
+            {
+                Console.WriteLine($"File not found: {resolvedPath}");
+            }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error loading {fileName}: {ex.Message}");
+            Console.WriteLine($"Error loading {filePath}: {ex.Message}");
             Console.WriteLine($"Stack trace: {ex.StackTrace}");
         }
         
